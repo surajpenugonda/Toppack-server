@@ -1,0 +1,9 @@
+<div>Hello</div>
+
+
+<% @all_packages.each do |message| %> 
+    <div class="message"> 
+      <p class="content"><%= message.user_name %></p> 
+      <p class="time"><%= message.package_name %></p> 
+    </div> 
+    <% end %>

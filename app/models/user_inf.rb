@@ -1,0 +1,2 @@
+class UserInf < ApplicationRecord
+end
