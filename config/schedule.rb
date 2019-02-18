@@ -18,9 +18,10 @@
 # end
 
 # Learn more: http://github.com/javan/whenever
+set :environment, 'development' 
 env :PATH, ENV['PATH']
 set :output, 'log/check_status_update.log'
-every 4.minute do
+every 8.hours do
     rake 'updatePackages'
 end
 

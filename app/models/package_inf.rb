@@ -22,10 +22,5 @@ class PackageInf < ApplicationRecord
             end
         end
     end
-
-    def self.sample_func
-        p "suraj"
-    end
-
-
+    
 end

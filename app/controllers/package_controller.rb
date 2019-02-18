@@ -24,10 +24,8 @@ class PackageController < ApplicationController
             @package.repo_name = @repo_name
             @package.package_name = package_name
             @package.save
-        endget 'packages' => 'package#index'
-        post 'packages' => 'package#create'
-        render json:@package,status: :created
         end
+        render json:@package,status: :created
     end
 
     def top_packages
